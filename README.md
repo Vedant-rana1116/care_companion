@@ -33,7 +33,7 @@ Built on the Google Agent Development Kit (ADK) 2.0 and Model Context Protocol (
 
 1. **Clone and navigate** to the project:
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/Vedant-rana1116/care_companion.git
    cd care-companion
    ```
 
@@ -142,7 +142,7 @@ graph TD
 ## Push to GitHub
 
 1. Create a new repo at https://github.com/new
-   - Name: `care-companion`
+   - Name: `care_companion`
    - Visibility: Public or Private
    - Do NOT initialize with README (you already have one)
 
@@ -153,7 +153,7 @@ graph TD
    git add .
    git commit -m "Initial commit: care-companion ADK agent"
    git branch -M main
-   git remote add origin https://github.com/<your-username>/care-companion.git
+   git remote add origin https://github.com/Vedant-rana1116/care_companion.git
    git push -u origin main
    ```
 
