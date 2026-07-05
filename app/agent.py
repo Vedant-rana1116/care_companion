@@ -177,7 +177,7 @@ def security_alert(node_input: str) -> Event:
     content = types.Content(role="model", parts=[types.Part.from_text(text=node_input)])
     return Event(content=content, output=node_input)
 
-def orchestrator_router(ctx: Context, node_input: types.Content) -> Event:
+def orchestrator_router(ctx: Context, node_input: Any) -> Event:
     # Check if a report was queued for approval in state
     if ctx.state.get("needs_approval"):
         ctx.state["needs_approval"] = False
